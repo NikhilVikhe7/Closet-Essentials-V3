@@ -1,20 +1,20 @@
 import axios from "axios";
+import Cookies from "universal-cookie";
 
 
 const BASE_URL = process.env.REACT_APP_BASE_URL
-let TOKEN = JSON.parse(localStorage.getItem("persist:root")) && JSON.parse(localStorage.getItem("persist:root")).user ?
-    JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser ?
-        JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser.accessToken : "" : "";
+const cookie = new Cookies();
+let TOKEN = cookie.get('token');
 // let TOKEN = '';
 
 const updateToken =(token)=>{
     TOKEN = token;
 }
 
-setInterval(()=>{
-    console.log(TOKEN);
-    }
-)
+// setInterval(()=>{
+//     console.log(TOKEN);
+//     }
+// )
 
 
 export const publicRequest = axios.create({

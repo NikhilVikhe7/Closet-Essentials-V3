@@ -12,6 +12,7 @@ import StripeCheckout from "react-stripe-checkout";
 import {userRequest} from "../requestMethods";
 import {useNavigate} from "react-router-dom";
 import {decreaseQuantity, increaseQuantity, removeProduct} from "../redux/cartRedux";
+import {useCookies} from "react-cookie";
 
 const Container = styled.div``
 
@@ -165,7 +166,7 @@ const Cart = () => {
     const onToken = (token)=>{
         setStripeToken(token);
     }
-
+    const [cookies, setCookie] = useCookies(['token']);
 
     useEffect(()=>{
         const makeRequest = async ()=>{
@@ -204,6 +205,7 @@ const Cart = () => {
         }
     }
     useEffect( () =>{
+        console.log("cookie", cookies.token);
         const updatecart = async ()=>{
             cart.quantity > 0 && cart._id && await userRequest.put(`/carts/${cart._id}`, cart);
         }

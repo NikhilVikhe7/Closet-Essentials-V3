@@ -2,13 +2,16 @@ import {loginFailure, loginStart, loginSuccess} from "./userRedux";
 import {publicRequest, updateToken, userRequest} from "../requestMethods";
 import axios from "axios";
 import {loadCart} from "./cartRedux";
+import Cookies from "universal-cookie";
 
 export const login = async (dispatch, user) =>{
     dispatch(loginStart());
+    const cookie = new Cookies();
     try{
         const res = await publicRequest.post("/auth/login", user);
         dispatch(loginSuccess(res.data));
         updateToken(res.data.accessToken);
+        cookie.set('token', res.data.accessToken);
         console.log(res.data.accessToken);
         const cart = await axios.get(`${process.env.REACT_APP_BASE_URL}/carts/find/${res.data._id}`,{
             headers:{

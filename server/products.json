@@ -1,0 +1,42 @@
+[
+  {
+    "title": "OVERSIZE HEAVY WEIGHT T-SHIRT",
+    "desc": "Loose-fitting T-shirt made of compact cotton. Round neck and short sleeves.",
+    "img": "https://static.zara.net/photos///2022/I/0/2/p/0526/394/804/2/w/563/0526394804_6_1_1.jpg?ts=1661165165881" ,
+    "categories": ["tshirt", "men"],
+    "size": ["S","M", "L", "XL"],
+    "color": ["PEARL GREY", "PURPLE"],
+    "price": 1890,
+    "inStock": true
+  },
+  {
+    "title": "T-SHIRT WITH BUTTONED NECK",
+    "desc": "Round neck T-shirt with a button-up front and long sleeves.",
+    "img": "https://static.zara.net/photos///2022/I/0/2/p/6462/340/800/2/w/563/6462340800_6_1_1.jpg?ts=1662993083595" ,
+    "categories": ["men", "full sleeves", "round neck", "tshirt"],
+    "size": ["S","M", "L", "XL"],
+    "color": ["BLACK", "WHITE", "DARK KHAKI"],
+    "price": 2590,
+    "inStock": true
+  },
+  {
+    "title": "PRINTED KNIT T-SHIRT",
+    "desc": "Knit T-shirt with a round neckline and short sleeves.",
+    "img": "https://static.zara.net/photos///2022/I/0/2/p/4374/312/615/2/w/563/4374312615_6_1_1.jpg?ts=1660845631384" ,
+    "categories": ["tshirt", "men"],
+    "size": ["S","M", "L", "XL"],
+    "color": ["ORANGE"],
+    "price": 1990,
+    "inStock": true
+  },
+  {
+    "title": "FLOWING SATIN SHIRT",
+    "desc": "Collared V-neck shirt with long sleeves and a button-up front.",
+    "img": "https://static.zara.net/photos///2023/V/0/1/p/2197/728/064/2/w/563/2197728064_6_1_1.jpg?ts=1670854372735" ,
+    "categories": ["women", "top", "tshirt"],
+    "size": ["S","M", "L", "XL"],
+    "color": ["WHITE"],
+    "price": 2290,
+    "inStock": true
+  }
+]

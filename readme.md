@@ -16,3 +16,5 @@ Closet Essentials is an e-commerce clothing store where user can browse availabl
 - Add items to a shopping cart
 - Checkout and make a purchase
 
+
+The site is live [here](https://closet-essentials-v3-m7zu-oj43b3n95-nikhilvikhe7.vercel.app/).

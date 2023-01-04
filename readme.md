@@ -1,6 +1,6 @@
 # Closet Essentials (E-commerce)
 
-Closet Essentials is an e-commerce clothing store built using React, Node.js, Redux, JWT, and Express.
+Closet Essentials is an e-commerce clothing store where user can browse available products and purchase them.
 
 ## Tech Stack
 
@@ -14,5 +14,5 @@ Closet Essentials is an e-commerce clothing store built using React, Node.js, Re
 
 - View a list of available clothing items
 - Add items to a shopping cart
-- Checkout and make a purchase using a secure payment gateway
-- View and update user account information
+- Checkout and make a purchase
+
